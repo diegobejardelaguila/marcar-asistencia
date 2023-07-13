@@ -8,7 +8,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) (versión Community o Ultimate) o cualquier otro entorno de desarrollo compatible con Kotlin.
 - [Kotlin](https://kotlinlang.org/) (la versión más reciente).
-- [Git](https://git-scm.com/) (opcionalmente, si deseas clonar el repositorio y contribuir).
+- [Git](https://git-scm.com/) (para clonar el repositorio y contribuir).
 
 ## Configuración del proyecto
 
