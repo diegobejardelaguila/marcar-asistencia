@@ -46,17 +46,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+        <!-- <Button
+            android:id="@+id/btnAtrasPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00BCD4"
+            android:text="@string/btnAtrasPerfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /> -->
 
-    <Button
-        android:id="@+id/btnAtrasPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#00BCD4"
-        android:text="@string/btnAtrasPerfil"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnAtrasPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00BCD4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPerfil"
@@ -88,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDni" />
 
-    <Button
+    <!--<Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="174dp"
         android:layout_height="64dp"
@@ -100,7 +109,33 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" /> -->
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="174dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#00BCD4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.893" />
+
+    <!--<Button
+        android:id="@+id/btnVerAsistencias"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/btnVerAsistencia"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" /> -->
 
     <Button
         android:id="@+id/btnVerAsistencias"
@@ -108,7 +143,6 @@
         android:layout_height="66dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#00BCD4"
-        android:text="@string/btnVerAsistencia"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,13 +164,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
-    <Button
+    <!--<Button
         android:id="@+id/btnRealizarMarcacion"
         android:layout_width="157dp"
         android:layout_height="65dp"
         android:layout_marginStart="32dp"
         android:backgroundTint="#00BCD4"
         android:text="@string/btnRealizarMarcacion"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" /> -->
+
+    <Button
+        android:id="@+id/btnRealizarMarcacion"
+        android:layout_width="157dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#00BCD4"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
