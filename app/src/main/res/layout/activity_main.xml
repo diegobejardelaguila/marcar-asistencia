@@ -15,4 +15,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnActivisix"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnActivity6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
