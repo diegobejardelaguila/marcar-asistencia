@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Maquetación</string>
+    <string name="btnAtrasPerfil">Atras</string>
+    <string name="btnVerAsistencia">Ver mis asistencias</string>
+    <string name="btnRealizarMarcacion">Realizar marcacion</string>
+    <string name="btnCerrarSesion">Cerrar sesion</string>
 </resources>
