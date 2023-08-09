@@ -1,11 +1,12 @@
-package com.example.maquetacion
+package com.example.maquetacion.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.maquetacion.R
 
-class MainActivity5 : AppCompatActivity() {
+class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main5)
+        setContentView(R.layout.activity_main3)
     }
 }

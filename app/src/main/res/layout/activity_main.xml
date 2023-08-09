@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2BB3F1"
-    tools:context=".MainActivity" >
+    tools:context=".ui.MainActivity" >
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_password"
         android:layout_width="338dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/usuario_de_perfil" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_email"
         android:layout_width="338dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -77,7 +77,7 @@
         android:textColor="#F6F6F6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
