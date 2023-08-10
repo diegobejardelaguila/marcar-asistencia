@@ -8,5 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_btn">#273746</color>
-
+    <color name="purple">#B692F7</color>
+    <color name="text">#4D4CF5</color>
+    <color name="menu">#EFF0RC</color>
 </resources>
