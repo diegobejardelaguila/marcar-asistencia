@@ -17,7 +17,7 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
 
     private val apiService: ApiService by lazy {
-        ApiService.create()
+        ApiService.create(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createSessionPreference(jwt: String) {
-        val sharedPreference = getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
+        val sharedPreference = getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
         val editor = sharedPreference.edit()
-        editor.putString("JWT", jwt)
+        editor.putString("access", jwt)
         editor.apply()
     }
 

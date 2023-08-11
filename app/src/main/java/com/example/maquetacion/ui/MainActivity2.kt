@@ -16,7 +16,7 @@ import retrofit2.Response
 class MainActivity2 : AppCompatActivity() {
 
     private val apiService: ApiService by lazy {
-        ApiService.create()
+        ApiService.create(this)
     }
 
     private val asistenciaList: MutableList<Asistencia> = mutableListOf()
