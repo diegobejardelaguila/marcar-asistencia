@@ -1,7 +1,10 @@
 package com.example.maquetacion.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.maquetacion.R
@@ -21,11 +24,22 @@ class MainActivity2 : AppCompatActivity() {
 
     private val asistenciaList: MutableList<Asistencia> = mutableListOf()
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         perfomAsistencia()
         initRecyclerView()
+
+        val imageView = findViewById<ImageView>(R.id.imgButton)
+
+        imageView.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent(this@MainActivity2, MainActivity4::class.java)
+                startActivity(intent)
+            }
+        })
     }
 
     private fun initRecyclerView() {
@@ -33,6 +47,8 @@ class MainActivity2 : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = AsistenciaAdapter(asistenciaList)
     }
+
+
 
     private fun perfomAsistencia() {
         val call = apiService.getAsistencias()

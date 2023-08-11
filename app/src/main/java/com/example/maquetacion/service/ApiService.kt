@@ -38,7 +38,6 @@ interface ApiService {
         @Field("fecha") fecha: String?,
         @Field("hora") hora: String?,
         @Field("tipo") tipo: String?,
-        @Field("user") user: Int?
     ): Call<com.example.maquetacion.model.Asistencia>
 
     @PUT("asistencia/{id}/")
@@ -53,11 +52,10 @@ interface ApiService {
     companion object Factory {
         const val BASE_URL = "http://10.0.2.2:8000/api/"
         fun create(context: Context): ApiService {
+            // Interceptor
             val okHttpClient = OkHttpClient.Builder().addInterceptor { chain ->
                 val sharedPreferences = context.getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
                 val token = sharedPreferences.getString("access", "")
-                println("estamos en el interceptor")
-                println(token)
 
                 val request = chain.request().newBuilder()
                     .addHeader("Authorization", "JWT $token")
@@ -65,6 +63,7 @@ interface ApiService {
 
                 chain.proceed(request)
             }.build()
+
 
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
