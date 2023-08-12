@@ -11,4 +11,8 @@
     <color name="purple">#B692F7</color>
     <color name="text">#4D4CF5</color>
     <color name="menu">#EFF0RC</color>
+
+    <!-- Colores nuevos -->
+    <color name="primary">#0857F6</color>
+    <color name="secondary">#517FEE</color>
 </resources>
