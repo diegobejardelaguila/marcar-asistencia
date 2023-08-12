@@ -50,7 +50,7 @@ interface ApiService {
     ): Call<com.example.maquetacion.model.Asistencia>
 
     companion object Factory {
-        const val BASE_URL = "http://10.0.2.2:8000/api/"
+        const val BASE_URL = "http://107.21.85.152/api/"
         fun create(context: Context): ApiService {
             // Interceptor
             val okHttpClient = OkHttpClient.Builder().addInterceptor { chain ->
