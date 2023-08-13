@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Maquetación</string>
-    <string name="regre_perfil">Regresar a mi perfil</string>
-    <string name="text_acti6">Gracias por marcar tu asistencia</string>
+    <!-- Inicio texto del activity_main6 -->
+    <string name="regresarMenu">Regresar</string>
+    <string name="textConfir">¡Ha marcado asistencia de manera satisfactoria!</string>
     <string name="btnActivity6">Ingresar a la actividad 6</string>
+    <!-- Fin texto del activity_main6 -->
 </resources>
