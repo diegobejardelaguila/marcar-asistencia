@@ -281,7 +281,7 @@
         android:layout_marginRight="25dp"
         android:columnCount="2"
         android:rowCount="2">
-
+        <!-- Inicio fila 1 -->
         <androidx.cardview.widget.CardView
             android:id="@+id/btnRealizarMarcacion"
             android:layout_width="100dp"
@@ -292,9 +292,10 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="12dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/colorLogin"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
+            app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -330,9 +331,10 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="12dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/colorLogin"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
+            app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -357,7 +359,8 @@
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
+        <!-- fin fila 1 -->
+        <!-- Inicio fila 2 -->
         <androidx.cardview.widget.CardView
             android:id="@+id/editarDatos"
             android:layout_width="100dp"
@@ -368,10 +371,10 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="12dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@color/colorLogin"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
-
+            app:cardCornerRadius="15dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -406,9 +409,10 @@
             android:layout_columnWeight="1"
             android:layout_marginStart="12dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@color/colorLogin"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
+            app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -433,5 +437,7 @@
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <!-- fin fila 2 -->
     </GridLayout>
 </RelativeLayout>
