@@ -16,6 +16,10 @@
     <color name="inputPassword">#6672FF</color>
     <!-- Fin Colores de la activity main -->
 
+    <!-- Inicio colres de la activity main3 -->
+    <color name="fondoAcvity3">#0099ff</color>
+    <!-- Fin colores de la activity main3 -->
+
     <!-- Inicio Colores de la activity main4 -->
     <color name="text">#FFFFFF</color>
     <!-- Fin Colores de la activity main4 -->

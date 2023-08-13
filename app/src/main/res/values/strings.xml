@@ -7,7 +7,12 @@
     <string name="txtRegistarse">No tengo cuenta. Registarme Ahora</string>
     <!-- Fin texto del activity_main -->
 
-    <!-- Inicio texto del activity_main -->
+    <!-- Inicio texto del activity main 3 -->
+    <string name="txtHeader">Actualizar datos</string>
+    <string name="d">d</string>
+    <!-- Fin texto del activity main 3 -->
+
+    <!-- Inicio texto del activity_main4 -->
     <string name="marcadoAsis">Marcar Asistencia</string>
     <string name="editDatos">Editar Datos</string>
     <string name="verAsistencia">Ver Asistencias</string>
