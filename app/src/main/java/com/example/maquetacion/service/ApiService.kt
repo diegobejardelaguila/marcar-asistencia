@@ -1,6 +1,7 @@
 package com.example.maquetacion.service
 
 import android.content.Context
+import com.example.maquetacion.io.response.AsistenciaCreateResponse
 import com.example.maquetacion.io.response.AsistenciaResponse
 import com.example.maquetacion.model.login.LoginResponse
 import okhttp3.OkHttpClient
@@ -13,6 +14,7 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Query
+import com.example.maquetacion.model.Asistencia
 
 interface ApiService {
 
@@ -33,12 +35,8 @@ interface ApiService {
     fun getAsistencia(@Query("id") id: Int): Call<com.example.maquetacion.model.Asistencia>
 
     @POST("asistencia/")
-    @FormUrlEncoded
     fun postAsistencia(
-        @Field("fecha") fecha: String?,
-        @Field("hora") hora: String?,
-        @Field("tipo") tipo: String?,
-    ): Call<com.example.maquetacion.model.Asistencia>
+    ): Call<AsistenciaCreateResponse>
 
     @PUT("asistencia/{id}/")
     @FormUrlEncoded
