@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                     editor.apply()
 
 
-                    val intent = Intent(this@MainActivity, MainActivity4::class.java)
+                    val intent = Intent(this@MainActivity, MainActivity2::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish() // Cierra la actividad actual para evitar volver atrás después de iniciar sesión
