@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.cardview.widget.CardView
 import com.example.maquetacion.R
 
 class MainActivity4 : AppCompatActivity() {
@@ -24,9 +25,9 @@ class MainActivity4 : AppCompatActivity() {
 
         setContentView(R.layout.activity_main4)
 
-        val btnListAsistencia = findViewById<Button>(R.id.btnVerAsistencias)
-        val btnMarcacion = findViewById<Button>(R.id.btnRealizarMarcacion)
-        val btnCerrarSesion = findViewById<Button>(R.id.btnCerrarSesion)
+        val btnListAsistencia = findViewById<CardView>(R.id.btnVerAsistencias)
+        val btnMarcacion = findViewById<CardView>(R.id.btnRealizarMarcacion)
+        val btnCerrarSesion = findViewById<CardView>(R.id.btnCerrarSesion)
 
         btnListAsistencia.setOnClickListener{
             val intent = Intent(this@MainActivity4, MainActivity2::class.java)

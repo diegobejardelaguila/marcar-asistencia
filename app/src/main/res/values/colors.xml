@@ -16,5 +16,8 @@
     <color name="inputPassword">#6672FF</color>
     <!-- Fin Colores de la activity main -->
 
+    <!-- Inicio Colores de la activity main4 -->
+    <color name="text">#FFFFFF</color>
+    <!-- Fin Colores de la activity main4 -->
 
 </resources>
