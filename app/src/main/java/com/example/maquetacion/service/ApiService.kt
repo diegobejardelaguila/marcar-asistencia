@@ -13,7 +13,7 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Query
-
+import com.example.maquetacion.model.User
 interface ApiService {
 
     //auth
@@ -22,8 +22,8 @@ interface ApiService {
     fun postLogin(@Field("email") email: String, @Field("password") password: String): Call<LoginResponse>
 
     // Users
-    @GET("auth/users/")
-    fun getUser(): Call<List<com.example.maquetacion.model.User>>
+    @GET("auth/users/me")
+    fun getUser(): Call<User>
 
     // Asistencia
     @GET("asistencia/")
