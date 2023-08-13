@@ -1,8 +1,12 @@
 package com.example.maquetacion.service
 
+import android.content.Context
 import com.example.maquetacion.io.response.AsistenciaResponse
 import com.example.maquetacion.model.login.LoginResponse
+import okhttp3.OkHttpClient
 import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -34,7 +38,6 @@ interface ApiService {
         @Field("fecha") fecha: String?,
         @Field("hora") hora: String?,
         @Field("tipo") tipo: String?,
-        @Field("user") user: Int?
     ): Call<com.example.maquetacion.model.Asistencia>
 
     @PUT("asistencia/{id}/")
@@ -47,12 +50,27 @@ interface ApiService {
     ): Call<com.example.maquetacion.model.Asistencia>
 
     companion object Factory {
-        const val BASE_URL = "http://10.0.2.2:8000/api/"
-        fun create(): ApiService {
-            val retrofit = retrofit2.Retrofit.Builder()
+        const val BASE_URL = "http://107.21.85.152/api/"
+        fun create(context: Context): ApiService {
+            // Interceptor
+            val okHttpClient = OkHttpClient.Builder().addInterceptor { chain ->
+                val sharedPreferences = context.getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
+                val token = sharedPreferences.getString("access", "")
+
+                val request = chain.request().newBuilder()
+                    .addHeader("Authorization", "JWT $token")
+                    .build()
+
+                chain.proceed(request)
+            }.build()
+
+
+            val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
-                .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(okHttpClient)
                 .build()
+
             return retrofit.create(ApiService::class.java)
         }
 

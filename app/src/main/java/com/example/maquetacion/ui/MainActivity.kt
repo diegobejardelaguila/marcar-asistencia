@@ -17,12 +17,24 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
 
     private val apiService: ApiService by lazy {
-        ApiService.create()
+        ApiService.create(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val sharedPreferences = getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
+        val token = sharedPreferences.getString("access", "")
+
+        if(token != null && token.isNotEmpty()) {
+            val intent = Intent(this, MainActivity4::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish() // Cierra la actividad actual para evitar volver atrás después de iniciar sesión
+            return
+        }
+
         val btnVista6 = findViewById<Button>(R.id.btn_login)
 
         btnVista6.setOnClickListener{
@@ -31,9 +43,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createSessionPreference(jwt: String) {
-        val sharedPreference = getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
+        val sharedPreference = getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
         val editor = sharedPreference.edit()
-        editor.putString("JWT", jwt)
+        editor.putString("access", jwt)
         editor.apply()
     }
 
@@ -50,14 +62,20 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 if (response.isSuccessful) {
                     val loginResponse = response.body()
-                    Log.d("Login", "Token: ${loginResponse}")
                     createSessionPreference(loginResponse?.access.toString())
-
                     Toast.makeText(this@MainActivity, "Token: ${loginResponse?.access}", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this@MainActivity, MainActivity2::class.java)
-                    startActivity(intent)
-                } else {
 
+                    val sharedPreference = getSharedPreferences("SECURITY", Context.MODE_PRIVATE)
+                    val editor = sharedPreference.edit()
+                    editor.putBoolean("isLoggedIn", true)
+                    editor.apply()
+
+
+                    val intent = Intent(this@MainActivity, MainActivity4::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                    finish() // Cierra la actividad actual para evitar volver atrás después de iniciar sesión
+                } else {
                     Toast.makeText(this@MainActivity, "Las credenciales son incorrectas", Toast.LENGTH_SHORT).show()
                 }
             }
