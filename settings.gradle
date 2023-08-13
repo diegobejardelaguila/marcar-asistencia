@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "sesion13"
+rootProject.name = "Maquetación"
 include ':app'
