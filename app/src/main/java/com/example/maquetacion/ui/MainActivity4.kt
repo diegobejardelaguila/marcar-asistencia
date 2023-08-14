@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import com.bumptech.glide.Glide
 import com.example.maquetacion.R
 import com.example.maquetacion.model.User
 import com.example.maquetacion.service.ApiService
@@ -48,6 +49,8 @@ class MainActivity4 : AppCompatActivity() {
                     tvEmail.setText(user?.email)
                     tvNumeroTelefono.setText(user?.phone)
                     tvDni.setText((user?.dni))
+                    Glide.with(this@MainActivity4).load(user?.img_profile).into(imgFace)
+
                 } else {
                     Toast.makeText(
                         this@MainActivity4,

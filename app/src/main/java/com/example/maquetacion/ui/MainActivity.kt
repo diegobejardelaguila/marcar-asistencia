@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.example.maquetacion.R
 import com.example.maquetacion.model.login.LoginResponse
@@ -36,9 +37,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnVista6 = findViewById<Button>(R.id.btn_login)
+        val btnRegister = findViewById<TextView>(R.id.btn_Sigun)
 
         btnVista6.setOnClickListener{
             perfomLogin()
+        }
+
+        btnRegister.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity7::class.java)
+            startActivity(intent)
         }
     }
 
