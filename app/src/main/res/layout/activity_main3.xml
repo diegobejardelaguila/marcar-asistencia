@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +10,6 @@
     android:orientation="vertical"
     tools:context=".ui.MainActivity3">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@id/tvHeader"
         android:layout_width="match_parent"
@@ -18,160 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <!--
-   <Button
-       android:id="@+id/button"
-       android:layout_width="33dp"
-       android:layout_height="30dp"
-       android:layout_marginStart="16dp"
-       android:layout_marginTop="16dp"
-       android:text="Button"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
 
-   <TextView
-       android:id="@+id/tvHeader"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Actualización de datos"
-       android:background="#000000"
-       android:textSize="24sp"
-       android:textColor="#FFFF"
-       android:textAlignment="center"
-       android:padding="16dp"
-       app:layout_constraintTop_toTopOf="parent" />
-
-   <TextView
-       android:id="@+id/tvNombres"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Nombres:"
-       android:textColor="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/tvHeader"
-       app:layout_constraintStart_toStartOf="@+id/tvHeader"
-       app:layout_constraintEnd_toEndOf="@+id/tvHeader"
-       android:layout_marginTop="16dp" />
-
-   <EditText
-       android:id="@+id/etNombres"
-       android:layout_width="320dp"
-       android:layout_height="31dp"
-       android:layout_marginTop="8dp"
-       android:background="#000000"
-       android:inputType="text"
-       android:textColor="#000000"
-       app:layout_constraintEnd_toEndOf="@+id/tvNombres"
-       app:layout_constraintStart_toStartOf="@+id/tvNombres"
-       app:layout_constraintTop_toBottomOf="@+id/tvNombres" />
-
-   <TextView
-       android:id="@+id/tvApellidos"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Apellidos:"
-       android:textColor="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/etNombres"
-       app:layout_constraintStart_toStartOf="@+id/tvNombres"
-       app:layout_constraintEnd_toEndOf="@+id/tvNombres"
-       android:layout_marginTop="16dp" />
-
-   <EditText
-       android:id="@+id/etApellidos"
-       android:layout_width="320dp"
-       android:layout_height="31dp"
-       android:inputType="text"
-       android:textColor="#000000"
-       android:background="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/tvApellidos"
-       app:layout_constraintStart_toStartOf="@+id/tvApellidos"
-       app:layout_constraintEnd_toEndOf="@+id/tvApellidos"
-       android:layout_marginTop="8dp" />
-
-   <TextView
-       android:id="@+id/tvTelefono"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Teléfono:"
-       android:textColor="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/etApellidos"
-       app:layout_constraintStart_toStartOf="@+id/tvApellidos"
-       app:layout_constraintEnd_toEndOf="@+id/tvApellidos"
-       android:layout_marginTop="16dp" />
-
-   <EditText
-       android:id="@+id/etTelefono"
-       android:layout_width="320dp"
-       android:layout_height="31dp"
-       android:inputType="phone"
-       android:textColor="#000000"
-       android:background="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/tvTelefono"
-       app:layout_constraintStart_toStartOf="@+id/tvTelefono"
-       app:layout_constraintEnd_toEndOf="@+id/tvTelefono"
-       android:layout_marginTop="8dp" />
-
-   <TextView
-       android:id="@+id/tvDNI"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="DNI:"
-       android:textColor="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/etTelefono"
-       app:layout_constraintStart_toStartOf="@+id/tvTelefono"
-       app:layout_constraintEnd_toEndOf="@+id/tvTelefono"
-       android:layout_marginTop="16dp" />
-
-   <EditText
-       android:id="@+id/etDNI"
-       android:layout_width="320dp"
-       android:layout_height="31dp"
-       android:inputType="number"
-       android:textColor="#000000"
-       android:background="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/tvDNI"
-       app:layout_constraintStart_toStartOf="@+id/tvDNI"
-       app:layout_constraintEnd_toEndOf="@+id/tvDNI"
-       android:layout_marginTop="8dp" />
-
-   <TextView
-       android:id="@+id/tvCorreo"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Correo:"
-       android:textColor="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/etDNI"
-       app:layout_constraintStart_toStartOf="@+id/tvDNI"
-       app:layout_constraintEnd_toEndOf="@+id/tvDNI"
-       android:layout_marginTop="16dp" />
-
-   <EditText
-       android:id="@+id/etCorreo"
-       android:layout_width="320dp"
-       android:layout_height="31dp"
-       android:inputType="textEmailAddress"
-       android:textColor="#000000"
-       android:background="#000000"
-       app:layout_constraintTop_toBottomOf="@+id/tvCorreo"
-       app:layout_constraintStart_toStartOf="@+id/tvCorreo"
-       app:layout_constraintEnd_toEndOf="@+id/tvCorreo"
-       android:layout_marginTop="8dp" />
-
-   <Button
-       android:id="@+id/btnConfirmar"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="16dp"
-       android:background="#FFFFFF"
-       android:text="Confirmar"
-       android:textColor="#000000"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/etCorreo"
-       app:layout_constraintVertical_bias="0.337" />
-
-   -->
         <View
             android:id="@+id/tvHeader"
             android:layout_width="0dp"
@@ -213,6 +60,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/tvBody"
         android:layout_width="match_parent"
@@ -399,4 +247,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

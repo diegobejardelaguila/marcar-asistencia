@@ -26,6 +26,10 @@
     <color name="text">#FFFFFF</color>
     <!-- Fin Colores de la activity main4 -->
 
+    <!-- Inicio Colores de la activity 5 -->
+    <color name="top_vista5">#626EF0</color>
+    <!-- Fin colores de la activity 5 -->
+
     <!-- Inicio Colores de la activity 6 -->
     <color name="top_vista6">#4654EB</color>
     <!-- Fin colores de la activity 6 -->
