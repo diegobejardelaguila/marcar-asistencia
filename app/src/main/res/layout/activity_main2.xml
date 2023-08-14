@@ -25,7 +25,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/_454510"
+            app:srcCompat="@drawable/arrow_left_navigation_pointer_arrows_icon_192502"
             android:clickable="true"
             />
 

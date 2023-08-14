@@ -7,7 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="griss">#C8C5C5</color>
     <color name="color_btn">#273746</color>
+
     <!-- Inicio Colores de la activity main -->
     <color name="colorLogin">#EFF0FC</color>
     <color name="messageWelcome">#6672FF</color>
@@ -24,8 +26,12 @@
     <color name="text">#FFFFFF</color>
     <!-- Fin Colores de la activity main4 -->
 
-    <!-- Inicio Colores de la activity main4 -->
-    <color name="gray">#808080</color>
-    <!-- Fin Colores de la activity main4 -->
+    <!-- Inicio Colores de la activity 5 -->
+    <color name="top_vista5">#626EF0</color>
+    <!-- Fin colores de la activity 5 -->
+
+    <!-- Inicio Colores de la activity 6 -->
+    <color name="top_vista6">#4654EB</color>
+    <!-- Fin colores de la activity 6 -->
 
 </resources>
