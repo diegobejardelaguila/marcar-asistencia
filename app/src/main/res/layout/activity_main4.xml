@@ -103,45 +103,46 @@
 
     <TextView
         android:id="@+id/tvEmail"
-        android:layout_width="328dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
         android:background="#95C1D5"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
-
-    <TextView
-        android:id="@+id/tvFirstName"
-        android:layout_width="334dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="220dp"
-        android:background="#95C1D5"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:textAllCaps="false" />
 
     <TextView
         android:id="@+id/tvLastName"
         android:layout_width="331dp"
         android:layout_height="46dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="#95C1D5"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="276dp"
+        android:background="#95C1D5"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="false" />
 
     <Button
         android:id="@+id/btnRealizarMarcacion"
@@ -157,4 +158,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.755" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="184dp"
+        android:layout_height="163dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/usuarioimagen"
+        tools:layout_editor_absoluteY="98dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
