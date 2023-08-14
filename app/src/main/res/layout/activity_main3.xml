@@ -14,7 +14,10 @@
         android:id="@id/tvHeader"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/colorLogin" >
+        android:background="@color/colorLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <!--
    <Button
        android:id="@+id/button"
@@ -169,8 +172,6 @@
        app:layout_constraintVertical_bias="0.337" />
 
    -->
-
-
         <View
             android:id="@+id/tvHeader"
             android:layout_width="0dp"
@@ -181,7 +182,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/ivRegresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -211,7 +212,181 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvBody"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader">
 
+        <TextView
+            android:id="@+id/tvNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:text="Nombres: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingStart="5dp"
+            android:ems="10"
+            android:hint="nombres"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombres" />
+
+        <TextView
+            android:id="@+id/tvApellidos"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Apellidos: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombres" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingStart="5dp"
+            android:ems="10"
+            android:hint="apellidos"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvApellidos" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Telefono: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etApellidos" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingStart="5dp"
+            android:ems="10"
+            android:hint="telefono"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTelefono" />
+
+        <TextView
+            android:id="@+id/tvDNI"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:text="DNI: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+
+        <EditText
+            android:id="@+id/etDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingStart="5dp"
+            android:ems="10"
+            android:hint="DNI"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDNI" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Correo: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDNI" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingStart="5dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCorreo" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/messageWelcome"
+            android:text="@string/txtBtn"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

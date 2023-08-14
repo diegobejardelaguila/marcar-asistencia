@@ -9,7 +9,7 @@
 
     <!-- Inicio texto del activity main 3 -->
     <string name="txtHeader">Actualizar datos</string>
-    <string name="d">d</string>
+    <string name="txtBtn">Guardar Cambios</string>
     <!-- Fin texto del activity main 3 -->
 
     <!-- Inicio texto del activity_main4 -->
