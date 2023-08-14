@@ -10,37 +10,41 @@
         android:id="@+id/tvFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Fecha"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tvEntrada"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="3dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/tvEntrada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Entrada"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tvSalida"
         app:layout_constraintStart_toEndOf="@+id/tvFecha"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
-    tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp" />
 
     <TextView
         android:id="@+id/tvSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Salida"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvEntrada"
         tools:layout_editor_absoluteY="3dp" />
 
