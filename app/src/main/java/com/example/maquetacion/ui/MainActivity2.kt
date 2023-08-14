@@ -11,7 +11,6 @@ import com.example.maquetacion.R
 import com.example.maquetacion.adapter.AsistenciaAdapter
 import com.example.maquetacion.io.response.AsistenciaResponse
 import com.example.maquetacion.model.Asistencia
-import com.example.maquetacion.provider.AsistenciaProvider
 import com.example.maquetacion.service.ApiService
 import retrofit2.Call
 import retrofit2.Response
