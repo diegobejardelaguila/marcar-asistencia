@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="griss">#C8C5C5</color>
     <color name="color_btn">#273746</color>
 
     <!-- Inicio Colores de la activity main -->
