@@ -10,20 +10,32 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/tvHeader"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="407dp"
+        android:layout_height="276dp"
+        android:background="@drawable/top_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/top_background">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvDni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Dni"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvEmail"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail"></TextView>
 
         <TextView
             android:id="@+id/saludo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="8dp"
             android:text="Hola"
             android:textColor="@color/text"
             android:textSize="18sp"
@@ -32,7 +44,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/tvFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -44,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/saludo" />
 
         <TextView
-            android:id="@+id/tvDni"
+            android:id="@+id/tvLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -52,8 +64,8 @@
             android:textColor="@color/text"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/tvNombre"
-            app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+            app:layout_constraintStart_toStartOf="@+id/tvFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
 
         <TextView
             android:id="@+id/tvEmail"
@@ -64,14 +76,14 @@
             android:textColor="@color/text"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/tvDni"
-            app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+            app:layout_constraintStart_toStartOf="@+id/tvLastName"
+            app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
         <TextView
             android:id="@+id/tvNumeroTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:text="cell phone"
             android:textColor="@color/text"
             android:textSize="25sp"
@@ -80,12 +92,12 @@
             app:layout_constraintTop_toBottomOf="@+id/tvEmail"></TextView>
 
         <ImageView
-            android:id="@+id/imageFace"
+            android:id="@+id/imgFace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirstName"
             app:layout_constraintTop_toTopOf="@+id/saludo"
             app:srcCompat="@drawable/profile" />
 
