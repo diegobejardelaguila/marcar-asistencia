@@ -28,6 +28,7 @@ class MainActivity4 : AppCompatActivity() {
         val btnListAsistencia = findViewById<CardView>(R.id.btnVerAsistencias)
         val btnMarcacion = findViewById<CardView>(R.id.btnRealizarMarcacion)
         val btnCerrarSesion = findViewById<CardView>(R.id.btnCerrarSesion)
+        val editDatos = findViewById<CardView>(R.id.editarDatos)
 
         btnListAsistencia.setOnClickListener{
             val intent = Intent(this@MainActivity4, MainActivity2::class.java)
@@ -44,6 +45,12 @@ class MainActivity4 : AppCompatActivity() {
             val intent = Intent(this@MainActivity4, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
+        }
+
+        editDatos.setOnClickListener{
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
