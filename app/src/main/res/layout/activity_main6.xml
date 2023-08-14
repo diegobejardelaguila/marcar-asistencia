@@ -57,7 +57,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/btnMenu"
+                    android:id="@+id/btnIrMenu"
                     android:layout_width="280dp"
                     android:layout_height="wrap_content"
                     android:text="@string/regresarMenu"
