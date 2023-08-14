@@ -8,5 +8,20 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_btn">#273746</color>
+    <!-- Inicio Colores de la activity main -->
+    <color name="colorLogin">#EFF0FC</color>
+    <color name="messageWelcome">#6672FF</color>
+    <color name="inputText">#756C6C</color>
+    <color name="inputEmail">#3B608C</color>
+    <color name="inputPassword">#6672FF</color>
+    <!-- Fin Colores de la activity main -->
+
+    <!-- Inicio colres de la activity main3 -->
+    <color name="fondoAcvity3">#0099ff</color>
+    <!-- Fin colores de la activity main3 -->
+
+    <!-- Inicio Colores de la activity main4 -->
+    <color name="text">#FFFFFF</color>
+    <!-- Fin Colores de la activity main4 -->
 
 </resources>
