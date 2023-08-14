@@ -15,6 +15,7 @@ import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Query
 import com.example.maquetacion.model.Asistencia
+import com.example.maquetacion.model.User
 
 interface ApiService {
 
@@ -25,7 +26,7 @@ interface ApiService {
 
     // Users
     @GET("auth/users/me")
-    fun getUser(): Call<com.example.maquetacion.model.User>
+    fun getUser(): Call<User>
 
     // Asistencia
     @GET("asistencia/")
