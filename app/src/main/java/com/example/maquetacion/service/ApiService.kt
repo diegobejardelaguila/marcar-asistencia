@@ -24,8 +24,8 @@ interface ApiService {
     fun postLogin(@Field("email") email: String, @Field("password") password: String): Call<LoginResponse>
 
     // Users
-    @GET("auth/users/")
-    fun getUser(): Call<List<com.example.maquetacion.model.User>>
+    @GET("auth/users/me")
+    fun getUser(): Call<com.example.maquetacion.model.User>
 
     // Asistencia
     @GET("asistencia/")

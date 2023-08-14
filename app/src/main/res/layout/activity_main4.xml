@@ -7,7 +7,7 @@
     tools:context=".ui.MainActivity4">
 
     <TextView
-        android:id="@+id/tvDni"
+        android:id="@+id/tvLastName"
         android:layout_width="304dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
@@ -19,10 +19,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
 
     <TextView
-        android:id="@+id/tvNombre"
+        android:id="@+id/tvFirstName"
         android:layout_width="303dp"
         android:layout_height="31dp"
         android:layout_marginTop="268dp"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
 
     <!--<Button
         android:id="@+id/btnCerrarSesion"
