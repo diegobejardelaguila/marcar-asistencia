@@ -24,4 +24,8 @@
     <color name="text">#FFFFFF</color>
     <!-- Fin Colores de la activity main4 -->
 
+    <!-- Inicio Colores de la activity main4 -->
+    <color name="gray">#808080</color>
+    <!-- Fin Colores de la activity main4 -->
+
 </resources>

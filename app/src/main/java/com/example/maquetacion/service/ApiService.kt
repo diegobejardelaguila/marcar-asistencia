@@ -24,8 +24,23 @@ interface ApiService {
     fun postLogin(@Field("email") email: String, @Field("password") password: String): Call<LoginResponse>
 
     // Users
-    @GET("auth/users/me")
+    @GET("auth/users/me/")
     fun getUser(): Call<com.example.maquetacion.model.User>
+
+    @PUT("auth/users/me/")
+    @FormUrlEncoded
+    fun putUser(
+        @Field("email") email: String?,
+        @Field("phone") phone: String?,
+        @Field("dni") dni: String?,
+        @Field("first_name") first_name: String?,
+        @Field("last_name") last_name: String?,
+        @Field("expected_entry_time") expected_entry_time: String?,
+        @Field("expected_exit_time") expected_exit_time: String?,
+        @Field("is_active") is_active: Boolean?,
+        @Field("is_staff") is_staff: Boolean?
+    ): Call<com.example.maquetacion.model.User>
+
 
     // Asistencia
     @GET("asistencia/")

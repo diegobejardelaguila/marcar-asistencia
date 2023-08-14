@@ -308,7 +308,7 @@
             android:layout_marginEnd="50dp"
             android:paddingStart="5dp"
             android:ems="10"
-            android:hint="telefono"
+            android:hint="Teléfono"
             android:textColorHint="@color/inputEmail"
             android:inputType="number"
             android:textColor="@color/black"
@@ -317,6 +317,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTelefono" />
+
+
 
         <TextView
             android:id="@+id/tvDNI"
@@ -329,7 +331,9 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+            app:layout_constraintTop_toBottomOf="@+id/etTelefono"
+
+            />
 
         <EditText
             android:id="@+id/etDNI"
@@ -348,7 +352,9 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDNI" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDNI"
+            android:enabled="false"
+            />
 
         <TextView
             android:id="@+id/tvCorreo"
@@ -361,7 +367,9 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etDNI" />
+            app:layout_constraintTop_toBottomOf="@+id/etDNI"
+            android:enabled="false"
+            />
 
         <EditText
             android:id="@+id/etCorreo"
@@ -373,14 +381,16 @@
             android:paddingStart="5dp"
             android:ems="10"
             android:hint="Correo"
-            android:textColorHint="@color/inputEmail"
+            android:textColorHint="@color/gray"
             android:inputType="textEmailAddress"
             android:background="@drawable/edittext_background"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvCorreo" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCorreo"
+            android:enabled="false"
+            />
 
         <Button
             android:id="@+id/btn_login"
