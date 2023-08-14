@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.maquetacion'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.maquetacion"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -51,6 +51,7 @@ dependencies {
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
 
 
 
